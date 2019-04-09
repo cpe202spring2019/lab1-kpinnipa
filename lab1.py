@@ -26,6 +26,8 @@ def bin_search(target, low, high, int_list):  # must use recursion
    If target is not found returns None. If list is None, raises ValueError """
    if int_list == None:
        raise ValueError('List cannot be None!')
+   if int_list == []:
+       return None
    if low > high:
        return None
    mid = (low + high)//2
